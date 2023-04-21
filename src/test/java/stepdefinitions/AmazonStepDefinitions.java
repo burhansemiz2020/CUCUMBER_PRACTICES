@@ -70,4 +70,27 @@ public class AmazonStepDefinitions {
 
         }
     }
+
+    @Then("user write and search {string} in the searchBox")
+    public void userWriteAndSearchInTheSearchBox(String searchWord) {
+        amazonPage=new AmazonPage();
+        amazonPage.amazonSearchElement.sendKeys(searchWord + Keys.ENTER);
+    }
+
+    @And("user tests that search results contain {string}")
+    public void userTestsThatSearchResultsContain(String searchedWord) {
+        String actualSearchResult=amazonPage.searchResultElement.getText();
+        Assert.assertTrue(actualSearchResult.contains(searchedWord));
+    }
+
+    @Given("user goes to {string} homepage")
+    public void userGoesToHomepage(String expectedUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(expectedUrl));
+    }
+
+    @Then("user tests {string} in url")
+    public void userTestsInUrl(String searchedWord) {
+        String actualUrl=Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains(searchedWord));
+    }
 }
