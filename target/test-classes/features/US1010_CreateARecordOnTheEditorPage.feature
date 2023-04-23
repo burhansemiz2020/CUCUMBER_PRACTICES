@@ -1,5 +1,5 @@
 Feature: US1010 User create a record on the edidor page with scenario outlined in the
-  @wip
+
   Scenario Outline: TC15 Multiple records should be created on the Editor page
 
     When user goes to "editorUrl" homepage
