@@ -93,4 +93,9 @@ public class AmazonStepDefinitions {
         String actualUrl=Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(searchedWord));
     }
+
+    @And("user close all the page")
+    public void userCloseAllThePage() {
+        Driver.quitDriver();
+    }
 }
