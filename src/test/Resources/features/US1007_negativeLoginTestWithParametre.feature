@@ -1,5 +1,5 @@
 
-@wip
+
 Feature: US1007 User cannot login with wrong information
 
 

@@ -1,5 +1,5 @@
 
-@wip
+
 Feature: US1007 User cannot login with wrong information
 
 
@@ -16,7 +16,7 @@ Feature: US1007 User cannot login with wrong information
     And user wait 2 seconds
     Then user close the page
 
-  Scenario: TC11 Gecersiz kullanici adi ve  gecerli sifre ile negatif Login Testi
+  Scenario: TC11 Negative Login Test with invalid username and valid password
 
     Given user goes to "qdUrl" homepage
     Then user clicks first page login link
@@ -29,7 +29,7 @@ Feature: US1007 User cannot login with wrong information
     And user wait 2 seconds
     Then user close the page
 
-  Scenario: TC12 Gecersiz kullanici adi ve  gecersiz sifre ile negatif Login Testi
+  Scenario: TC12 Negative Login Test with invalid username and invalid password
 
     Given user goes to "qdUrl" homepage
     Then user clicks first page login link
