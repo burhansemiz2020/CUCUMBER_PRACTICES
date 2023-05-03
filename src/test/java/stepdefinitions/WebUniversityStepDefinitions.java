@@ -4,13 +4,10 @@ import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
 import pages.WebUniversityPage;
 import utilities.Driver;
 
 import java.util.Set;
-
-import static java.awt.SystemColor.window;
 
 public class WebUniversityStepDefinitions {
     WebUniversityPage webUniversityPage=new WebUniversityPage();
@@ -40,9 +37,9 @@ public class WebUniversityStepDefinitions {
         for (String each : windowHandlesSeti) {
             if (!each.equals(firstPageHandleValue)){
                 secondPageHandleValue=each;
-    }
+            }
         }
-     Driver.getDriver().switchTo().window(secondPageHandleValue);
+        Driver.getDriver().switchTo().window(secondPageHandleValue);
     }
     @And("user enter values in the username box")
     public void userEnterValuesInTheUsernameBox() {
@@ -87,7 +84,5 @@ public class WebUniversityStepDefinitions {
         Assert.assertTrue(webUniversityPage.contactUsLink.isDisplayed());
 
     }
-
-
 
 }

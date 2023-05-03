@@ -1,6 +1,6 @@
 
 Feature: US1006 User must be able to login with the information in the configuration file
-  @wip
+
   Scenario: TC09 Positive Login Test with valid username and password
 
     Given user goes to "qdUrl" homepage

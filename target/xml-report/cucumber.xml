@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="126.227" tests="11" skipped="0" failures="0" errors="0">
+<testcase classname="US1003 User searches for values entered as parameters" name="TC03 User searches Nutella with parameterized method" time="19.839">
+<system-out><![CDATA[
+Given user go to the main page of the amazon................................passed
+Then user write and search "Nutella" in the searchBox.......................passed
+And user tests that search results contain "Nutella"........................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 User uses background for initial common steps" name="TC03 User searches Nutella with parameterized method" time="15.877">
+<system-out><![CDATA[
+Given user go to the main page of the amazon................................passed
+Then user write and search "Nutella" in the searchBox.......................passed
+And user tests that search results contain "Nutella"........................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 User uses background for initial common steps" name="TC04 User searches Java with parameterized method" time="20.556">
+<system-out><![CDATA[
+Given user go to the main page of the amazon................................passed
+Then user write and search "Java" in the searchBox..........................passed
+And user tests that search results contain "Java"...........................passed
+And user waits 2 seconds....................................................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 User uses background for initial common steps" name="TC05 User searches Samsung with parameterized method" time="14.35">
+<system-out><![CDATA[
+Given user go to the main page of the amazon................................passed
+Then user write and search "Samsung" in the searchBox.......................passed
+And user tests that search results contain "Samsung"........................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 User uses data written in configuration.properties as parameter" name="TC06 User tests navigating to amazon site." time="6.744">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then user tests "amazon" in url.............................................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 User uses data written in configuration.properties as parameter" name="TC07 User tests navigating to wisequarter site." time="7.383">
+<system-out><![CDATA[
+Given user goes to "wqUrl" homepage.........................................passed
+Then user tests "wisequarter" in url........................................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 User uses data written in configuration.properties as parameter" name="TC08 User tests navigating to walmart site." time="6.549">
+<system-out><![CDATA[
+Given user goes to "walmartUrl" homepage....................................passed
+Then user tests "walmart" in url............................................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Test run for multiple data with scenario outlined" name="TC13 test run for multiple data with scenario outlined - Example #1.1" time="8.947">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then user write and search "Nutella" in the searchBox.......................passed
+And user tests that search results contain "Nutella"........................passed
+Then user close the page....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Test run for multiple data with scenario outlined" name="TC13 test run for multiple data with scenario outlined - Example #1.2" time="8.106">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then user write and search "Java" in the searchBox..........................passed
+And user tests that search results contain "Java"...........................passed
+Then user close the page....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Test run for multiple data with scenario outlined" name="TC13 test run for multiple data with scenario outlined - Example #1.3" time="9.041">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then user write and search "Samsung" in the searchBox.......................passed
+And user tests that search results contain "Samsung"........................passed
+Then user close the page....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Test run for multiple data with scenario outlined" name="TC13 test run for multiple data with scenario outlined - Example #1.4" time="7.971">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then user write and search "Apple" in the searchBox.........................passed
+And user tests that search results contain "Apple"..........................passed
+Then user close the page....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

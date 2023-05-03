@@ -9,5 +9,8 @@
         <module name="com.TestCucumber_Practice" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.team105Cucumber" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

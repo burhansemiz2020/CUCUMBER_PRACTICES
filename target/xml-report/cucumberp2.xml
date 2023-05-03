@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="151.553" tests="8" skipped="0" failures="1" errors="0">
+<testcase classname="US1003 User searches for values entered as parameters" name="TC04 User searches Java with parameterized method" time="21.743">
+<system-out><![CDATA[
+Given user go to the main page of the amazon................................passed
+Then user write and search "Java" in the searchBox..........................passed
+And user tests that search results contain "Java"...........................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 User uses background for initial common steps" name="TC03 User searches Nutella with parameterized method" time="16.193">
+<system-out><![CDATA[
+Given user go to the main page of the amazon................................passed
+Then user write and search "Nutella" in the searchBox.......................passed
+And user tests that search results contain "Nutella"........................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 User uses background for initial common steps" name="TC04 User searches Java with parameterized method" time="21.193">
+<system-out><![CDATA[
+Given user go to the main page of the amazon................................passed
+Then user write and search "Java" in the searchBox..........................passed
+And user tests that search results contain "Java"...........................passed
+And user waits 2 seconds....................................................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 User uses background for initial common steps" name="TC05 User searches Samsung with parameterized method" time="20.635">
+<failure type="org.openqa.selenium.WebDriverException" message="unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [21a5905fea74a5d3d3fcfe0611621bc6, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\semiz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54334}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54334/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 21a5905fea74a5d3d3fcfe0611621bc6">
+<![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [21a5905fea74a5d3d3fcfe0611621bc6, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\semiz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54334}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54334/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 21a5905fea74a5d3d3fcfe0611621bc6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:953)
+	at utilities.Driver.getDriver(Driver.java:55)
+	at stepdefinitions.Hooks.tearDown(Hooks.java:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user go to the main page of the amazon................................passed
+Then user write and search "Samsung" in the searchBox.......................passed
+And user tests that search results contain "Samsung"........................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Test run for multiple data with scenario outlined" name="TC13 test run for multiple data with scenario outlined - Example #1.1" time="18.166">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then user write and search "Nutella" in the searchBox.......................passed
+And user tests that search results contain "Nutella"........................passed
+Then user close the page....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Test run for multiple data with scenario outlined" name="TC13 test run for multiple data with scenario outlined - Example #1.2" time="18.076">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then user write and search "Java" in the searchBox..........................passed
+And user tests that search results contain "Java"...........................passed
+Then user close the page....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Test run for multiple data with scenario outlined" name="TC13 test run for multiple data with scenario outlined - Example #1.3" time="19.304">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then user write and search "Samsung" in the searchBox.......................passed
+And user tests that search results contain "Samsung"........................passed
+Then user close the page....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Test run for multiple data with scenario outlined" name="TC13 test run for multiple data with scenario outlined - Example #1.4" time="15.524">
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then user write and search "Apple" in the searchBox.........................passed
+And user tests that search results contain "Apple"..........................passed
+Then user close the page....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,4 +1,4 @@
-
+@p1 @smoke
 Feature: US1005 User uses data written in configuration.properties as parameter
    # 3 Scenario olusturup, amazon,wisequarter ve walmart anasayfalarina gidin
   # ve o anasayfalara gittigimizi test edin

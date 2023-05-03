@@ -54,11 +54,12 @@ public class QualitydemyStepDefinitions {
     @And("user writes manually {string} in the user box")
     public void userWritesManuallyInTheUserBox(String Username) {
         qualitydemyPage.emailBox.sendKeys(Username);
-        
+
     }
 
     @And("user writes manually {string} in the password box")
     public void userWritesManuallyInThePasswordBox(String Password) {
+
         qualitydemyPage.passwordBox.sendKeys(Password);
     }
 }

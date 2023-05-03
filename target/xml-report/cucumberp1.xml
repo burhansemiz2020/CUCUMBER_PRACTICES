@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="83.054" tests="5" skipped="0" failures="1" errors="0">
+<testcase classname="US1003 User searches for values entered as parameters" name="TC03 User searches Nutella with parameterized method" time="22.297">
+<system-out><![CDATA[
+Given user go to the main page of the amazon................................passed
+Then user write and search "Nutella" in the searchBox.......................passed
+And user tests that search results contain "Nutella"........................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003 User searches for values entered as parameters" name="TC05 User searches Samsung with parameterized method" time="20.177">
+<system-out><![CDATA[
+Given user go to the main page of the amazon................................passed
+Then user write and search "Samsung" in the searchBox.......................passed
+And user tests that search results contain "Samsung"........................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 User uses data written in configuration.properties as parameter" name="TC06 User tests navigating to amazon site." time="6.968">
+<failure type="org.openqa.selenium.WebDriverException" message="unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3778e487d735d130a6cd8bf3ec20fb7a, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\semiz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54083/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3778e487d735d130a6cd8bf3ec20fb7a">
+<![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=112.0.5615.138)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3778e487d735d130a6cd8bf3ec20fb7a, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\semiz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54083/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3778e487d735d130a6cd8bf3ec20fb7a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:953)
+	at utilities.Driver.getDriver(Driver.java:55)
+	at stepdefinitions.Hooks.tearDown(Hooks.java:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user goes to "amazonUrl" homepage.....................................passed
+Then user tests "amazon" in url.............................................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 User uses data written in configuration.properties as parameter" name="TC07 User tests navigating to wisequarter site." time="19.381">
+<system-out><![CDATA[
+Given user goes to "wqUrl" homepage.........................................passed
+Then user tests "wisequarter" in url........................................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 User uses data written in configuration.properties as parameter" name="TC08 User tests navigating to walmart site." time="13.623">
+<system-out><![CDATA[
+Given user goes to "walmartUrl" homepage....................................passed
+Then user tests "walmart" in url............................................passed
+And user close the page.....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,5 +1,5 @@
 Feature: US1008 Test run for multiple data with scenario outlined
-
+@smoke @p2
   Scenario Outline: TC13 test run for multiple data with scenario outlined
     #go to the amazon mainpage. Search for Java, Samsung and Apple
     #test that the search results contain the word we are looking for.

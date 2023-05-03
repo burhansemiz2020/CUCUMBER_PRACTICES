@@ -7,7 +7,6 @@ import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
 public class Hooks {
-
     @After
     public void tearDown(Scenario scenario){
 
@@ -17,5 +16,4 @@ public class Hooks {
         }
         Driver.closeDriver();
     }
-
 }
